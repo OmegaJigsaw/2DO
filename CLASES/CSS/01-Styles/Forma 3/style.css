@@ -1,0 +1,40 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modificar una etiqueta */
+button{
+    box-shadow: 5px 5px 5px black;
+}
+/* Modificar clase */
+.boton1 {
+    background-color: blueviolet; 
+    color: white; 
+    padding: 5px 10px; 
+    border: 1px 5px;
+    border-radius: 12px;
+    margin-top: 10px ;
+}
+/* Para definir una clase dentro de el style de head es asi con punto(.) */
+.boton2 {
+    background-color: green;
+    color: white; 
+    padding: 5px 10px; 
+    border: 1px 5px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.boton3{
+    background-color: aqua;
+    color: black; 
+    padding: 5px 10px; 
+    border: 1px 5px;
+    border-radius: 12px;
+    margin-top: 10px ;
+}
+
+/* Modificador de contenidos */
+/* En este caso esto modifica las etiquetas <span> dentro de los <p> */
+p span{
+    color: red;
+}

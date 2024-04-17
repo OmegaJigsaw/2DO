@@ -1,0 +1,101 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: purple;
+    box-shadow: 7px 20px 10px rgba(74, 17, 100, 0.815);
+    margin: 10px;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0px;
+    margin: 25px 15px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 30px 65px;
+}
+nav ul li i{
+    color: wheat;
+}
+a{
+    text-decoration: none; /*CAMBIA EL SUBRAYADO*/
+    color: wheat;
+}
+li:hover{
+    transition-duration: 4s;
+    transform: scale(1.8);
+    
+}
+.ButtonScale{
+    margin-left: 80px;
+    color: black;
+    
+}
+.ButtonScale:hover{
+    transition-duration: 2s;
+    background-color: blueviolet;
+    color: white;
+    transform: scaleX(2);
+}
+#MENU-BUTTON{
+    display: none;
+}
+/* 
+    EL "APOSTROFE" que suele estar sobre la "ñ" (se hace altGR + el plus del lado izq)
+    Indica que es esta modificando la etiqueta adjunta a la derecha
+*/
+/* #MENU-BUTTON:checked ~ nav{
+    display: none;
+} */
+/* Para modificar el contenido de la pantalla cuando hay un cambio de resolucion se hace asi */
+/* Y dentro de esta opcion se SOBREESCRIBEN LOS ESTILOS DEFINIDOS */
+@media screen and (max-width: 901px) {
+    nav{
+        width: 25%;
+        /* La medida vh es una unidad que crece verticalmente */
+        height: 94vh;
+    }
+
+    nav ul li{
+        display: block;
+        width: 70%;
+        height: 100%;
+        border: none;
+        padding: 40px;
+    }
+
+    li:hover{
+        transition-duration: 5s;
+        transform: scale(1.05);
+        
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]+label{
+        /* !important es para dar prioriodad en caso de que el css se contradiga */
+        display: block !important;
+        right: 10px;
+        
+    }
+    #MENU-BUTTON{
+        position: absolute;
+        right: 10px;
+    }
+    }
+    #MENU-BUTTON:checked ~ nav{
+        /* Visibility es lo que indica el nombre, si el elemento es visible */
+        /* visibility: hidden; */
+        translate: -100% 0;
+        /* 
+        Translate se usa para trasladar los elementos de donde se encuentran hacia cierta
+        ubicacion definida desde la ubicacion original, el primer atributo es el eje x y el otro el eje y
+        se puede cambiar en unidades de medida y en porsentajes
+        */
+        transition-duration: .5s;
+
+}

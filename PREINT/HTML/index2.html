@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--FORMULARIOS-->
+    <!-- PARA ENVIAR DATOS SE HACE DE LA SGTE MANERA  EN "ACTION" INDICANDO LA RUTA DONDE VAN A IR LOS DATOS Y EN "METHOD" EL METODO A UTILIZAR -->
+    <form action="/rutaejemplo" method="get">
+        <!--for es el identificador del label-->
+        <label for="NOMBRE">Nombre: </label>
+        <!--al colocar en la id del input el identificador del label al hacer click en el label inmediatamente nos mandara a la ventana de input -->
+        <!--
+            la propiedad de "name" solicita que se le de un nombre, el cual debe ser el que se necesite para almacenar los datos
+            por ejemplo los datos que se ingresen en este input van a ser guardado como el 
+            valor de la llave "nombre" dentro de un objeto de esta manera {"nombre" ; (valor del input)}
+        -->
+        <!-- la propiedad placeholder coloca en letras opacas dentro del input el texto que se le de-->
+        <!-- para asignar valores por defecto podemos usar la propiedad value-->
+        <input value="Si" type="text" id="NOMBRE" name="nombre" placeholder="Juan..." style="width: 100px; height: 15px; margin-bottom: 10px ;"/> <!--margin es para la separacion del margen-->
+        <br>
+        <!-- 
+            la propiedad de type genera el tipo de interaccion que se realiza en ese espacio
+            sease un boton, un cuadro de texto normal o de contraseña, entre otros
+            algunos de los tipos son:
+            -> text, password, radio, email, checkbox, file, button, submit
+        -->
+        <label for="APELLIDO"> Apellidos: </label>
+        <input type="text" name="apellido" id="APELLIDO" placeholder="Lopez Aguilar... " style="width: 150px; height: 15px; margin-bottom: 10px ;">
+        <br>
+        <label for="COMENTARIO" > Comentario
+        <br> 
+        <!-- rows indica el alto en filas y cols el ancho en columnas -->
+        <!-- autocomplete es para activar o desactivar dicha funcion que rellena lo que falte en la entrada con textos anteriores-->
+        <textarea rows="10" cols="40" id="COMENTARIO" placeholder="Ingrese comentario..." name="comentario"></textarea>
+        <br>
+        <input type="submit">    
+    </form>
+</body>
+</html>

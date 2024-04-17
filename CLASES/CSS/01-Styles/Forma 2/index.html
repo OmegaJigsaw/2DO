@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--La segunda forma se basa en dar los estilos desde la cabecera del documento-->
+    <style>
+        button {
+            background-color: blueviolet; 
+            color: white; 
+            padding: 5px 10px; 
+            border: 1px 5px;
+            border-radius: 12px;
+            margin-top: 10px ; 
+        }
+        /* Para definir una clase dentro de el style de head es asi con punto(.) */
+        .boton2 {
+            background-color: green;
+        }
+        .boton3{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="color:salmon">Texto Ejemplo</p> 
+    </div>
+    <div>
+        <label>Nombre:</label>
+        <input type="text">
+    </div>
+    <div>
+        <label>Apellido:</label>
+        <input type="text">
+    </div>
+    <div>
+        <button>Guardar</button>
+        <button class="boton2">Enviar</button>
+        <button class="boton3">Borrar</button>
+    </div>
+</html>

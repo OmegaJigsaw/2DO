@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Enviar datos con form-->
+    <form>
+        <div>
+            <label>Nombre: </label>
+            <input type="text" placeholder="Ingrese Nombre..." name="NOMBRE">
+        </div>
+        <div>
+            <label>Apellidos: </label>
+            <input type="text" placeholder="Ingrese Apellidos..." name="APELLIDOS">
+        </div>
+        <div>
+            <label>Direccion: </label>
+            <input type="text" placeholder="Direccion" name="DIRECCION">
+        </div>
+        <div>
+            <label>Ciudad: </label>
+            <!--PARA CREAR UN MENU DE SELECCION SE HACE CON UN SELECT Y COLOCANDO EN SU INTERIOR LAS OPCIONES CON LA ETIQUETA OPTION-->
+            <select name="CIUDAD">
+                <option>Santiago</option>
+                <option>Osorno</option>
+                <option>Temuco</option>
+                <option>Valdivia</option>
+            </select>
+        </div>
+        <div>
+            <label>Becado </label>
+            <input type="checkbox" name="BECADO">
+        </div>
+        <div>
+            <!--PARA QUE EL INPUT RADIO SOLO ELIJA UNA OPCION DE LAS QUE SE COLOQUEN, TODAS LAS OPCIONES DEBEN TENER EL ATRIBUTO NAME CON EL MISMO VALOR-->
+            <input type="radio" name="CARRERA">Ig. Informatica
+            <input type="radio" name="CARRERA">Turismo
+            <input type="radio" name="CARRERA">Gastronomia
+        </div>
+        <div>
+            <!--TEXT AREA USA COLS PARA DEFINIR EL ANCHO Y ROWS EL ALTO-->
+            <textarea cols="25" rows="3" placeholder="Comentarios"></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar</button> <!--ES MAS CONVENIENTE ESTE BOTON A USAR UN INPUT DE TIPO SUBMIT-->
+            <button type="reset">Borrar datos</button> <!--Reset es para borrar los datos de un formulario-->
+        </div>
+        <div>
+            <!--<a> crea un hipervinculo, pero para que lleve a algo deve usarse la propiedad href-->
+            <!--UTILIZANDO HTTPS:// ENVIA HACIA UN LINK || UTILIZANDO MAILTO: ENVIA AL CORREO QUE SE COLOQUE LUEGO DE LOS :-->
+            <a href="https://www.google.com"> IR A GOOGLE
+        </div>
+    </form>
+</body>
+</html>

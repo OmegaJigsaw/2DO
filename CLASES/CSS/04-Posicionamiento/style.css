@@ -1,0 +1,75 @@
+div{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: purple;
+}
+.StaticElement{
+    position: static;
+    background-color: wheat;
+}
+/* 
+Todos los elementos de position sin contar static permiten agregar 4 funcionalidades, que permiten mover el elemento
+1.-TOP indica desde arriba cuantos px se deplazara desde arriba
+2.-BOTTOM indica desde abajo cuantos px se deplazara desde arriba
+3.-RIGHT indica desde derecha cuantos px se deplazara desde arriba
+4.-LEFT indica desde izquierda cuantos px se deplazara desde arriba
+*/
+.RelativeElement{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    /* Estas propiedades permiten posicionarse donde se deseen incluso sobreponer sobre otros elementos*/
+    /* Los limites de este elemento movil es relativo a los elementos que le rodeen de manera inmediata */
+    background-color: wheat;
+}
+.AbsoluteElement{
+    /* 
+    Absolute hace que el elemento pase a una capa superior al resto
+    dejando el elemento en frente, lo cual permite que el resto de elementos
+    se posicionen ignorando el elemento absolute y este pueda sobreponerse a todos
+     */
+    /*
+    Su posicionamiento depende del elemento donde se este conteniendo el elemento absolute
+    Este al no estar en algun div relative, toma el espacio completo de la etiqueta body
+    */
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: wheat;
+}
+.DivRelativo{
+    margin: 25em;
+    display: relative;
+    background-color: green;
+}
+.DivInterno{
+    position: relative;
+    background-color: blue;
+    top: 40px;
+    left: 50px;
+}
+.StickyElement{
+    /* 
+    Sticky hace que el elemento quede pegado a su posicion designada,
+    pero este no deja disponible su posicion, es decir los elementos extras
+    deben respetar la posicion en la que se encontraba el elemento pese a que se
+    haya movido de su ubicacion
+    */
+    position: sticky;
+    top: 40px;
+    left: 50px;
+    background-color: wheat
+}
+.FixedElement{
+    /* 
+    Fixed hace lo mismo que stiky solo que este se pone por en frente de los 
+    elementos y cede su posicion, asi que el resto de elementos no lo tiene
+    en cuenta a la hora de posicionarse y pueden ubicarse donde este estaba
+    */
+    position: fixed;
+    top: 40px;
+    left: 50px;
+    background-color: wheat
+}
+

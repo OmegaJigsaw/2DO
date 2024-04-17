@@ -1,0 +1,124 @@
+/* Ejercicio 1 */
+.divPadre{
+    position: fixed;
+    height: 100px;
+    width: 300px;
+    top: 862px;
+}
+.divInterno1{
+    position: static;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: lightblue;
+}
+.divInterno2{
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: orange;
+    left: 70px
+}
+/*  Ejercicio 2*/
+.divPadre2{
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    height: 120px;
+    background-color: purple;
+    
+}
+.div2Interno1{
+    position: static;
+    display: inline-block;
+    background-color: wheat;
+    width: 80px;
+    height: 80px;
+}
+.div2Interno2{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+    left: 5px;
+    top: 5px;
+}
+/* Ejercicio 3 */
+.div3Padre{
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    height: 125px;
+    background-color: purple;
+}
+.div3Interno1{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+}
+.div3Interno2{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    left: 220px;
+}
+/* Ejercicio 4 */
+.div4Padre{
+    position: fixed;
+    display: inline-block;
+    background-color: rgba(211, 211, 211, 0.815);
+    width: 400px;
+    height: 200px;
+}
+.div4Interno1{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: red;
+    top: 0px;
+    left: 0px;
+}
+.div4Interno2{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: orange;
+    top: 0px;
+    right: 0px;
+
+}
+.div4Interno3{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(195, 205, 50);
+    bottom: 0px;
+    left: 0px;
+}
+.div4Interno4{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(35, 209, 12);
+    bottom: 0px;
+    right: 0px;
+}
+.div4IC{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: darkcyan;
+    top: 70px;
+    left: 150px;
+}
