@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barra de Navegación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- Vamos a usar este checkbox para ocultar la barra de navegación.
+    Para esto NECESITAMOS que el checbox esté a la misma altura del nav -->
+    <input type="checkbox" id="menu-button">
+    <!-- La gracia de enlazar el checkbox con un label, es que ahora
+    podremos activar el checkbox tocando el label -->
+    <label for="menu-button">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <nav>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></i> Inicio</a>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-circle-info"></i> Acerca de</a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i> Servicios</a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i> Contáctenos</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
