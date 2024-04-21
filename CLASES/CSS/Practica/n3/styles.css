@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+html{
+    min-height: 100vh;
+}
+aside{
+    position: fixed;
+    width: 20rem;
+    height: 20rem;
+    background-color: #601700;
+    margin-top: 10%;
+    right: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+/*username*/
+#name{
+    margin-top: 18%;
+    color: #F7F9F9;
+}
+#userlbl{
+    font-size: 20px;
+}
+#USERNAME{
+    width: 12rem;
+    height: 1.4rem;
+    border-radius: 6px;
+}
+#USERNAME:focus{
+    outline: none;
+    background-color: #e0d0c1;
+}
+/*pasword*/
+#pas{
+    margin-top: 5%;
+}
+#paslbl{
+    color: #F7F9F9;
+    font-size: 20px;
+}
+#PASSWORD{
+    width: 12rem;
+    height: 1.4rem;
+    border-radius: 6px;
+}
+#PASSWORD:focus{
+    outline: none;
+    background-color: #e0d0c1;
+}
+/*buttons*/
+/* HIDE CHECK*/
+i{
+    color: #e0d0c1;
+}
+#hidelbl{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.8rem;
+}
+#HIDE{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#HIDE:checked~aside{
+    translate: 90% 0;
+    transition-duration: .5s;
+}
+/*Check Remember*/
+#check{
+    margin-top: 10%;
+}
+#checkLbl{
+    color: #e0d0c1;
+    font-size: 14px;
+}

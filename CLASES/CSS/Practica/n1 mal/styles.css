@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+div>nav>ul>li{
+    display: inline-block;
+}
+.LUL{
+    list-style-type: none; /*OCULTA LOS PUNTOS*/
+    padding-left: 10%;
+}
+.MAIN{
+    position: fixed;
+    background-color: lightgrey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.LATERALl{
+    position: fixed;
+    background-color: purple;
+    color: wheat;
+    height: 100vh;
+    width: 20%;
+}
+.SUPNAV{
+    position: relative;
+    background-color: rebeccapurple;
+    height: 115px;
+    width: 100%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SUL{
+    list-style-type: none;
+}
+.CONTENT{
+    background-color: forestgreen;
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    left: 20%;
+    overflow: hidden; /*OCULTA EL CONTENIDO QUE SALE DEL LIMITE*/
+    word-wrap: break-word; /*PERMITE EL SALTO DE LINEA EN LAS PALABRAS LARGAS*/
+    white-space: pre-wrap; /*SI EL TEXTO TIENE SALTOS DE LINEA ESTE RESPETA DICHOS SALTO Y SALTA IGUAL*/
+}
+.buttonL{
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    padding: 40% 80% ;
+}
+.buttonT{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 20px;
+}
+#top{
+    position: relative;
+}
+#bota{
+    position: relative;
+    top: 780px;
+    right: 50px;
+}
+#botb{
+    position: relative;
+    top: 800px;
+}
+#Talk{
+    position: fixed;
+    top: 90%;
+    left: 50%;
+}
+#topLI{
+    display: inline-block;
+    position: fixed;
+    padding: 25px 60px;
+}
+#left{
+    position: fixed;
+    left: 170PX;
+    top: 28px;
+}
+#right{
+    position: fixed;
+    right: 18px;
+    top: 28px
+}

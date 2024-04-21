@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    min-height: 100vh;
+}
+
+.wrapper{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+
+aside{
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    top: 0;
+    width: 20rem;
+    background-color: blue;
+}
+
+section{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section > nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section > main{
+    flex-grow: 1;
+    background-color: lightgrey;
+    color: black;
+}
+
+
+section > main > .container{
+    max-width: 350px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
