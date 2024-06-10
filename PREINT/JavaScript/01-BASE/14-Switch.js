@@ -13,5 +13,5 @@ switch (accion){
         console.log("ALMACENANDO INFORMACION");
         break;
     default:
-        console.log("ACCION NO VALIDA")
+        console.log("ACCION NO VALIDA");
 }
