@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      div {
+        margin: 10px 0px;
+        padding: 0px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="row">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" class="form-control" />
+          </div>
+          <div class="row">
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="form-control"
+            />
+          </div>
+          <div class="row">
+            <label for="area">Área</label>
+            <select
+              id="area"
+              class="form-select"
+            >
+              <option value="-1">NO SELECCIONADA</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="carrera">Carrera</label>
+            <select id="carrera" class="form-select">
+              <option value="-1">NO SELECCIONADA</option>
+            </select>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" id="btnMatricula">Matricular</button>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <table id="tabla" class="table table-stryped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área</th>
+                <th>Carrera</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="mainNoComents.js"></script>
+  </body>
+</html>
